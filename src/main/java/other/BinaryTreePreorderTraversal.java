@@ -1,6 +1,5 @@
 package other;
 
-import apple.laf.JRSUIUtils;
 import common.TreeNode;
 
 import java.util.ArrayList;
@@ -38,13 +37,13 @@ public class BinaryTreePreorderTraversal {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node = root;
         while (node != null || !stack.empty()) {
-            while (node != null) {
+            if (node != null) {
                 res.add(node.val);
-                stack.push(node);
-                node = node.left;
+                stack.push(node.left);
+            } else {
+                node = stack.pop();
+                node = node.right;
             }
-            node = stack.pop();
-            node = node.right;
         }
         return res;
     }
