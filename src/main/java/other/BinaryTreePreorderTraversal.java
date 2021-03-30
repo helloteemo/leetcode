@@ -37,7 +37,7 @@ public class BinaryTreePreorderTraversal {
 
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node = root;
-        while (node != null && !stack.empty()) {
+        while (node != null || !stack.empty()) {
             while (node != null) {
                 res.add(node.val);
                 stack.push(node);
