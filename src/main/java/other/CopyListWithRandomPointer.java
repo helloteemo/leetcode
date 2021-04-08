@@ -1,6 +1,5 @@
 package other;
 
-import org.w3c.dom.Node;
 
 import java.util.HashMap;
 
@@ -31,8 +30,6 @@ public class CopyListWithRandomPointer {
     }
 
     /**
-     *
-     *
      *
      * @param head 随机链表
      * @return 深度复制的随机链表
