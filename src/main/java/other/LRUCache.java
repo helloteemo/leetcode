@@ -1,7 +1,5 @@
 package other;
 
-import sun.jvm.hotspot.types.CIntegerField;
-
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
